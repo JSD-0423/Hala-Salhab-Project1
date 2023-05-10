@@ -1,0 +1,45 @@
+@import "./variables.css";
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--bg_default);
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+.container {
+    margin: 20px 55px 0 55px;
+}
+
+header {
+    height: 200px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+nav>h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    /* letter-spacing: normal; */
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 20px; */
+}
