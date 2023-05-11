@@ -8,37 +8,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="stylesheet" href="./Style/style.css">
 </head>
 
 <body>
+    <header class="container">
+        <h1>
+            Web Topics
+        </h1>
+        <div class="nav-buttons">
+            <button class="text-button">
+                 <ion-icon name="moon-outline"  aria-label="Dark Mode"></ion-icon>
+                 Dark Mode
+                 </button>
+            <button class="text-button">
+                    <ion-icon name="heart-outline" aria-label="Favourite"></ion-icon>
+                 Favourites
+                </button>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="rectangle_wrapper">
+            <div class="triangle-left"></div>
+            <div class="triangle-right"></div>
+        </div>
+        <div class="text-wrapper">
+            <h1>Welcome to our website!</h1>
+            <p>We have a new desgin that's fresh, modern, and easy to use.</p>
+        </div>
+    </section>
     <div class="container">
-        <header>
-            <nav>
-                <h2>
-                    Web Topics
-                </h2>
-                <div class="nav-buttons">
-                    <button class="text-button">
-                     <!-- <img src="Imgaes/heart.png" alt="dark-mode-icon"> -->
-                     <i class="fi fi-rs-moon"></i>
-                     Dark Mode
-                     </button>
-                    <button class="text-button">
-                     <!-- <img src="" alt="favorite-icon"> -->
-                     Favorite
-                    </button>
+        <div class="search-bar">
+            <div class="column-1">
+                <ion-icon name="search-outline" aria-label="Search"></ion-icon>
+                <input type="text" placeholder="Search the website...">
+            </div>
+            <div class="column-2">
+                <p>Sort by</p>
+                <div class="search-bar options">
+                    Deafult
+                    <ion-icon name="chevron-down-outline" aria-label="Sort options"></ion-icon>
                 </div>
-            </nav>
-            <section class="header-section">
-                <h1>Welcome to our website!</h1>
-                <h3>We have new desgin that's fresh, modern, and easy to use.</h3>
-            </section>
-        </header>
-        <!-- <section class="search-bar"></section>
-        <main>
+            </div>
+            <div class="column-3">
+                <p>Filter by</p>
+                <div class="search-bar options">
+                    Deafult
+                    <ion-icon name="chevron-down-outline" aria-label="Filter options"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <!-- <main>
 
         </main>
         <footer>

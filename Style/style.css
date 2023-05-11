@@ -2,44 +2,175 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--bg_default);
+    background-color: var(--bg_body);
+    overflow: hidden;
+    /* width: 100%;
+    height: 100%; */
 }
 
 * {
     font-family: 'Nunito Sans', sans-serif;
     /* font-family: 'Open Sans', sans-serif; */
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
 }
 
 .container {
-    margin: 20px 55px 0 55px;
+    /* margin: 20px 58px 0 58px; */
+    padding-inline: 58px;
 }
 
 header {
-    height: 200px;
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-nav {
-    height: 30px;
+    /* margin: 20px 0 0 0px; */
+    height: 70px;
+    background-color: var(--bg_default);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: aqua; */
+    /* border-bottom: 1px solid black; */
 }
 
-nav>h2 {
-    font-size: 1.1rem;
-    font-weight: 400;
+header>h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--brand-primary);
     /* letter-spacing: normal; */
 }
 
-.header-section {
-    display: flex;
+.text-button {
+    font-weight: 400;
+    font-size: 0.899rem;
+    height: 32px;
+    background-color: var(--bg_defaul);
+    text-align: center;
+    display: inline-block;
+    border: 1px solid var(--lines-color);
+    border-radius: 3px;
+    padding-inline: 10px;
+}
+
+ion-icon {
+    font-size: 1rem;
+    --ionicon-stroke-width: 20px;
+    vertical-align: middle;
+}
+
+.banner {
+    background-color: var(--bg_default);
+    /* background-color: aqua; */
+    height: 112px;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; */
+    /* height: 7rem; */
+}
+
+.rectangle_wrapper {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    /* background-color: aqua; */
+    /* margin: 0;
+    padding-inline: 0; */
+}
+
+.triangle-right {
+    height: 0;
+    width: 0;
+    /* border-top: 1px solid transparent; */
+    border-right: 90rem solid var(--brand-secondary);
+    border-bottom: 3.9rem solid transparent;
+    position: absolute;
+    right: 0;
+}
+
+.triangle-left {
+    height: 0;
+    width: 0;
+    /* border-image: linear-gradient(to right, var( --brand-primary), var( --brand-secondary)); */
+    /* border-top: 1px solid transparent; */
+    border-left: 100rem solid var(--brand-primary);
+    /* this works on 1440 */
+    border-bottom: 3.9rem solid transparent;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    /* left: 0; */
+}
+
+.text-wrapper {
+    /* width: 40%; */
+    /* height: 3.56rem; */
+    /* background-color: rgb(70, 169, 68); */
+    text-align: left;
+    /* line-height: 0.489em; */
+    margin-left: 35.5%;
+    /* float: inline-start; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around; */
+}
+
+.text-wrapper>h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--brand-secondary);
+}
+
+.text-wrapper>p {
+    margin-top: -0.4rem;
+    /* word-spacing: 0.1em; */
+    font-size: 1rem;
+    /* width: 25em; */
+    word-wrap: break-word;
+}
+
+.search-bar {
+    width: 100%;
+    height: 55px;
+    display: flex;
     align-items: center;
-    /* height: 20px; */
+    justify-content: space-evenly;
+    background-color: var(--bg_default);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.column-1 {
+    width: 75%;
+    /* background-color: blueviolet; */
+    margin: 8px;
+}
+
+.column-1>input {
+    font-size: 1rem;
+    border: none;
+}
+
+.column-2,
+.column-3 {
+    width: 12%;
+    height: 30px;
+    /* background-color: brown; */
+    margin: 10px;
+}
+
+.column-2>p,
+.column-3>p {
+    margin-top: -5px;
+    font-size: 0.8rem;
+}
+
+.options {
+    height: 10%;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-top: 7px;
 }
