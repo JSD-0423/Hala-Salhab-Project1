@@ -3,7 +3,6 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: var(--bg_body);
-    overflow: hidden;
     /* width: 100%;
     height: 100%; */
 }
@@ -185,12 +184,110 @@ input:focus {
     margin-top: 7px;
 }
 
-.search-result {
-    margin-top: 15px;
-}
-
 .search-result>h1 {
     font-size: 1.5rem;
+}
+
+.search-result {
+    /* max-width: 1440px; */
+    margin-top: 1rem;
+    /* margin: 0 auto; */
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    height: 9rem;
+    vertical-align: middle;
+}
+
+.cards {
+    margin: 0;
+    padding: 1.5rem 0 0 0;
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    grid-gap: 2.1rem;
+}
+
+.cards::after {
+    content: "";
+    flex: auto;
+}
+
+.cards_item {
+    /* display: flex; */
+    width: 40%;
+    /* margin-top: 0.99rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.199rem; */
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 17.92%;
+    }
+}
+
+.card {
+    background-color: var(--bg_default);
+    border-radius: 0.45rem;
+    box-shadow: 0 15px 20px -7px rgba(191, 190, 190, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 17.5rem;
+}
+
+.card_content {
+    padding-left: 0.899rem;
+}
+
+.card_title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+}
+
+.card_text {
+    /* color: #ffffff; */
+    font-size: 0.798rem;
+    line-height: 1.2;
+    /* margin-top: 0.799rem; */
+    font-weight: 400;
+}
+
+.section-2 {
+    padding-bottom: 1rem;
+}
+
+.section-2 .card_text {
+    color: #9f9b9bc9;
+    padding-top: 1rem;
+}
+
+.raiting>ion-icon {
+    font-size: 1rem;
+    color: rgb(231, 202, 15);
+    margin: -2px;
+    padding: 0;
+}
+
+.made_by {
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
 }
 
 footer {
@@ -203,4 +300,5 @@ footer {
 
 footer>p>ion-icon {
     color: var(--heart-color);
+    font-size: 1.5rem;
 }
