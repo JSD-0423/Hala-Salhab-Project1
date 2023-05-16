@@ -1,0 +1,95 @@
+@import "./variables.css";
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--bg_body);
+}
+
+header>h1 {
+    font-size: 1.5rem;
+}
+
+img {
+    height: 60%;
+    vertical-align: middle;
+}
+
+.right-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--body-text);
+    justify-content: center;
+    color: #fff;
+    height: 16rem;
+    padding: 1.9rem 13rem 0 13rem;
+}
+
+.course-details {
+    width: 33.655rem;
+    margin: 0 1rem 0 0;
+    line-height: 1.5rem;
+}
+
+.course-details>p {
+    font-size: 1.018rem;
+    padding-top: 1.5rem;
+    line-height: 22px;
+}
+
+.course-header>h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.course-header>p {
+    color: var(--brand-secondary);
+    font-weight: 400;
+}
+
+.side-card {
+    height: 26rem;
+    width: 31%;
+    background-color: var(--bg_default);
+    border: 3px solid var(--bg_default);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_content {
+    height: 55%;
+    margin: 0.5rem;
+    margin-top: 1.6888rem;
+}
+
+.add-to-fav {
+    border: 1px solid #9f9b9bc9;
+    padding: 1.4rem;
+    margin-top: 0.5rem;
+    height: 7rem;
+    width: 80%;
+    line-height: 30px;
+}
+
+.card_content>p {
+    color: var(--body-text);
+}
+
+.add-to-fav:last-child {
+    color: #9f9b9bc9;
+}
+
+button {
+    background-color: var(--brand-secondary);
+    color: var(--bg_default);
+    border: 0;
+    font-size: 1.3rem;
+    height: 3.788rem;
+    width: 15rem;
+    letter-spacing: 0;
+}
+
+button>ion-icon {
+    color: var(--bg_default);
+    font-size: 2rem;
+}
