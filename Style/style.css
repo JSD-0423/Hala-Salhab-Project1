@@ -26,11 +26,6 @@ h3 {
     padding-inline: 58px;
 }
 
-.dark-mode {
-    background-color: var(--bg_body-dark);
-    color: var(--body-text-dark);
-}
-
 /*****************************************
 *               Header                  *
 ****************************************/
@@ -150,6 +145,7 @@ ion-icon {
 .column-1>input {
     font-size: 1rem;
     border: none;
+    background-color: transparent;
 }
 
 textarea:focus,
@@ -178,7 +174,6 @@ input:focus {
 
 .option {
     display: flex;
-    background-color: aquamarine;
     justify-content: space-between;
     font-size: 1rem;
     width: 90%;
@@ -255,6 +250,10 @@ input:focus {
     font-weight: 400;
 }
 
+.details_page_link{
+    text-decoration: none;
+    color: inherit;
+}
 .section_2 {
     padding-bottom: 1rem;
 }
@@ -266,7 +265,7 @@ input:focus {
 
 .raiting>ion-icon {
     font-size: 1rem;
-    color: rgb(231, 202, 15);
+    color: #e5981a;
     margin: -2px;
     padding: 0;
 }
