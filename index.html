@@ -20,11 +20,11 @@
     <header class="container">
         <h1>Web Topics</h1>
         <div class="nav-buttons">
-            <button class="text-button">
+            <button class="text-button" onclick="toggleDarkMode()">
                 <ion-icon name="moon-outline" aria-label="Dark Mode"></ion-icon>
                 <span>Dark Mode</span>
             </button>
-            <button class="text-button">
+            <button class="text-button" onclick="showHideFav()">
                 <ion-icon name="heart-outline" aria-label="Favourite"></ion-icon>
                 <span>Favourites</span>
             </button>
@@ -243,7 +243,7 @@
                 </li> -->
             </ul>
         </main>
-        <section class="favourite_container">
+        <section class="favourite_container" id="favourite">
             <div class="favourite">
                 <h5>My Favourite Topics</h5>
                 <ul class="fav_cards">

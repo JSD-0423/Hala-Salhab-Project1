@@ -26,6 +26,11 @@ h3 {
     padding-inline: 58px;
 }
 
+.dark-mode {
+    background-color: var(--bg_body-dark);
+    color: var(--body-text-dark);
+}
+
 /*****************************************
 *               Header                  *
 ****************************************/
