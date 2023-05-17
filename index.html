@@ -1,237 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Web Topics</title>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,500&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,500&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./Style/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="container">
-      <h1>Web Topics</h1>
-      <div class="nav-buttons">
-        <button class="text-button">
-          <ion-icon name="moon-outline" aria-label="Dark Mode"></ion-icon>
-          Dark Mode
-        </button>
-        <button class="text-button">
-          <ion-icon name="heart-outline" aria-label="Favourite"></ion-icon>
-          Favourites
-        </button>
-      </div>
+        <h1>Web Topics</h1>
+        <div class="nav-buttons">
+            <button class="text-button">
+                <ion-icon name="moon-outline" aria-label="Dark Mode"></ion-icon>
+                <span>Dark Mode</span>
+            </button>
+            <button class="text-button">
+                <ion-icon name="heart-outline" aria-label="Favourite"></ion-icon>
+                <span>Favourites</span>
+            </button>
+        </div>
     </header>
     <section class="banner">
-      <div class="rectangle_wrapper">
-        <div class="triangle-left"></div>
-        <div class="triangle-right"></div>
-      </div>
-      <div class="text-wrapper">
-        <div class="left_center">
-        <h1>Welcome to our website!</h1>
-        <p>We have a new desgin that's fresh, modern, and easy to use.</p>
-    </div>
-    </div>
-      </div>
+        <div class="rectangle_wrapper">
+            <div class="triangle-left"></div>
+            <div class="triangle-right"></div>
+        </div>
+        <div class="text-wrapper">
+            <div class="left_center">
+                <h1>Welcome to our website!</h1>
+                <p>We have a new desgin that's fresh, modern, and easy to use.</p>
+            </div>
+        </div>
+        </div>
     </section>
     <div class="container">
-      <div class="search-bar">
-        <div class="column-1">
-          <ion-icon name="search-outline" aria-label="Search"></ion-icon>
-          <input type="text" placeholder="Search the website..." />
+        <div class="search-bar">
+            <div class="column-1">
+                <ion-icon name="search-outline" aria-label="Search"></ion-icon>
+                <input type="text" placeholder="Search the website..." />
+            </div>
+            <div class="column-2">
+                <div class="options option-1">
+                    <p>Sort by</p>
+                    <div class="option">
+                        Deafult
+                        <ion-icon name="chevron-down-outline" aria-label="Sort options"></ion-icon>
+                    </div>
+                </div>
+                <div class="options">
+                    <p>Filter by</p>
+                    <div class="option">
+                        Deafult
+                        <ion-icon name="chevron-down-outline" aria-label="Filter options"></ion-icon>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="column-2">
-          <p>Sort by</p>
-          <div class="options">
-            Deafult
-            <ion-icon
-              name="chevron-down-outline"
-              aria-label="Sort options"
-            ></ion-icon>
-          </div>
-        </div>
-        <div class="column-3">
-          <p>Filter by</p>
-          <div class="search-bar options">
-            Deafult
-            <ion-icon
-              name="chevron-down-outline"
-              aria-label="Filter options"
-            ></ion-icon>
-          </div>
-        </div>
-      </div>
-      <main class="search-result">
-        <h1>"24" Web Topics Found</h1>
-        <ul class="cards">
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./Logos/html.png" /></div>
-              <div class="card_content section_1">
-                <p class="card_text">Web Development Languages</p>
-                <h2 class="card_title">HTML</h2>
-              </div>
-              <div class="card_content section_2">
-                <div class="raiting">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-                <p class="card_text">Author: Sarah Smith</p>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./Logos/css.webp" /></div>
-              <div class="card_content section_1">
-                <p class="card_text">Web Development Languages</p>
-                <h2 class="card_title">CSS</h2>
-              </div>
-              <div class="card_content section_2">
-                <div class="raiting">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-                <p class="card_text">Author: Sarah Smith</p>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./Logos/javascript.jpg" /></div>
-              <div class="card_content section_1">
-                <p class="card_text">Web Development Languages</p>
-                <h2 class="card_title">JavaScript</h2>
-              </div>
-              <div class="card_content section_2">
-                <div class="raiting">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-                <p class="card_text">Author: Sarah Smith</p>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./Logos/html.png"/></div>
-              <div class="card_content section_1">
-                <p class="card_text"><a href="details.html" class="details_page_link">Web Development Languages</a></p>
-                <h2 class="card_title">HTML</h2>
-              </div>
-              <div class="card_content section_2">
-                <div class="raiting">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-                <p class="card_text">Author: Sarah Smith</p>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./Logos/html.png" /></div>
-              <div class="card_content section_1">
-                <p class="card_text">Web Development Languages</p>
-                <h2 class="card_title">HTML</h2>
-              </div>
-              <div class="card_content section_2">
-                <div class="raiting">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-                <p class="card_text">Author: Sarah Smith</p>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./Logos/html.png" /></div>
-              <div class="card_content section_1">
-                <p class="card_text">Web Development Languages</p>
-                <h2 class="card_title">HTML</h2>
-              </div>
-              <div class="card_content section_2">
-                <div class="raiting">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-                <p class="card_text">Author: Sarah Smith</p>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./Logos/vuejs.jpeg" /></div>
-              <div class="card_content section_1">
-                <p class="card_text">Web Development Languages</p>
-                <h2 class="card_title">Vue.js</h2>
-              </div>
-              <div class="card_content section_2">
-                <div class="raiting">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-                <p class="card_text">Author: Sarah Smith</p>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./Logos/html.png" /></div>
-              <div class="card_content section_1">
-                <p class="card_text">Web Development Languages</p>
-                <h2 class="card_title">HTML</h2>
-              </div>
-              <div class="card_content section_2">
-                <div class="raiting">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-                <p class="card_text">Author: Sarah Smith</p>
-              </div>
-            </div>
-          </li>
-          <!-- <li class="cards_item">
+        <main class="search-result">
+            <h1>"24" Web Topics Found</h1>
+            <ul class="cards">
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="./Logos/html.png" /></div>
+                        <div class="card_content section_1">
+                            <p class="card_text">Web Development Languages</p>
+                            <h2 class="card_title">HTML</h2>
+                        </div>
+                        <div class="card_content section_2">
+                            <div class="raiting">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card_text">Author: Sarah Smith</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="./Logos/css.webp" /></div>
+                        <div class="card_content section_1">
+                            <p class="card_text">Web Development Languages</p>
+                            <h2 class="card_title">CSS</h2>
+                        </div>
+                        <div class="card_content section_2">
+                            <div class="raiting">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card_text">Author: Sarah Smith</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="./Logos/javascript.jpg" /></div>
+                        <div class="card_content section_1">
+                            <p class="card_text">Web Development Languages</p>
+                            <h2 class="card_title">JavaScript</h2>
+                        </div>
+                        <div class="card_content section_2">
+                            <div class="raiting">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card_text">Author: Sarah Smith</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="./Logos/html.png" /></div>
+                        <div class="card_content section_1">
+                            <p class="card_text"><a href="details.html" class="details_page_link">Web Development
+                                    Languages</a></p>
+                            <h2 class="card_title">HTML</h2>
+                        </div>
+                        <div class="card_content section_2">
+                            <div class="raiting">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card_text">Author: Sarah Smith</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="./Logos/html.png" /></div>
+                        <div class="card_content section_1">
+                            <p class="card_text">Web Development Languages</p>
+                            <h2 class="card_title">HTML</h2>
+                        </div>
+                        <div class="card_content section_2">
+                            <div class="raiting">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card_text">Author: Sarah Smith</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="./Logos/html.png" /></div>
+                        <div class="card_content section_1">
+                            <p class="card_text">Web Development Languages</p>
+                            <h2 class="card_title">HTML</h2>
+                        </div>
+                        <div class="card_content section_2">
+                            <div class="raiting">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card_text">Author: Sarah Smith</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="./Logos/vuejs.jpeg" /></div>
+                        <div class="card_content section_1">
+                            <p class="card_text">Web Development Languages</p>
+                            <h2 class="card_title">Vue.js</h2>
+                        </div>
+                        <div class="card_content section_2">
+                            <div class="raiting">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card_text">Author: Sarah Smith</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="./Logos/html.png" /></div>
+                        <div class="card_content section_1">
+                            <p class="card_text">Web Development Languages</p>
+                            <h2 class="card_title">HTML</h2>
+                        </div>
+                        <div class="card_content section_2">
+                            <div class="raiting">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card_text">Author: Sarah Smith</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="cards_item">
                     <div class="card">
                         <div class="card_image"><img src="./Logos/html.png"></div>
                         <div class="card_content section_1">
@@ -250,49 +241,50 @@
                         </div>
                     </div>
                 </li> -->
-        </ul>
-      </main>
-      <section class="favourite_container">
-      <div class="favourite">
-        <h5>My Favourite Topics</h5>
-          <ul class="fav_cards">
-            <li class="fav_card_item">
-              <div class="fav_card">
-                <div class="fav_card_image"><img src="./Logos/react.webp" /></div>
-                <div class="fav_card_content">
-                <p class="fav_card_text">React</p>
-                  <div class="raiting">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="fav_card_item">
-                <div class="fav_card">
-                  <div class="fav_card_image"><img src="./Logos/cloud.jpeg" /></div>
-                  <div class="fav_card_content">
-                     <p class="fav_card_text">Cloud Compu...</p>
-                     <div class="raiting">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star-outline"></ion-icon>
-                    </div>
-                  </div>
-                </div>
-              </li>
-          </ul>
-        </div>
+            </ul>
+        </main>
+        <section class="favourite_container">
+            <div class="favourite">
+                <h5>My Favourite Topics</h5>
+                <ul class="fav_cards">
+                    <li class="fav_card_item">
+                        <div class="fav_card">
+                            <div class="fav_card_image"><img src="./Logos/react.webp" /></div>
+                            <div class="fav_card_content">
+                                <p class="fav_card_text">React</p>
+                                <div class="raiting">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="fav_card_item">
+                        <div class="fav_card">
+                            <div class="fav_card_image"><img src="./Logos/cloud.jpeg" /></div>
+                            <div class="fav_card_content">
+                                <p class="fav_card_text">Cloud Compu...</p>
+                                <div class="raiting">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-      <footer>
-        <p>Developed with <ion-icon name="heart"></ion-icon> © 2023</p>
-      </footer>
+        <footer>
+            <p>Developed with <ion-icon name="heart"></ion-icon> © 2023</p>
+        </footer>
     </div>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>

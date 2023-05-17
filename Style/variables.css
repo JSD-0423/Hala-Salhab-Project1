@@ -6,4 +6,8 @@
     --lines-color: #DDDDDD;
     --body-text: #333333;
     --heart-color: #DC143C;
+    --bg_default-dark:#1A1A1A;
+ 	--bg_body-dark:	#282828;
+ 	--lines-color-dark:	#000000;
+ 	--body-text-dark:#EDEDED;
 }
