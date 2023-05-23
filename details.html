@@ -12,81 +12,103 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./Style/details.css">
+    <link rel="stylesheet" href="./Style/style.css">
 </head>
 
 <body>
     <header class="container">
-        <h1>
-            Web Topics
-        </h1>
+        <h2>Web Topics</h2>
         <div class="nav-buttons">
-            <button class="text-button">
-                 <ion-icon name="moon-outline"  aria-label="Dark Mode"></ion-icon>
-                 Dark Mode
-                 </button>
-            <button class="text-button">
-                    <ion-icon name="heart-outline" aria-label="Favourite"></ion-icon>
-                 Favourites
-                </button>
+            <button class="text-button" onclick="toggleDarkMode()">
+                <ion-icon name="moon-outline" aria-label="Dark Mode"></ion-icon>
+                <span>Dark Mode</span>
+            </button>
+            <button class="text-button" onclick="showHideFav()">
+                <ion-icon name="heart-outline" aria-label="Favourite"></ion-icon>
+                <span>Favourites</span>
+            </button>
         </div>
     </header>
-    <section class="banner">
+    <section class="banner" id="banner">
         <div class="rectangle_wrapper">
             <div class="triangle-left"></div>
             <div class="triangle-right"></div>
         </div>
         <div class="text-wrapper">
-            <h1>Welcome to our website!</h1>
-            <p>We have a new desgin that's fresh, modern, and easy to use.</p>
+            <div class="welcome-text">
+                <h1>Welcome to our website!</h1>
+                <p>We have a new desgin that's fresh, modern, and easy to use.</p>
+            </div>
+        </div>
         </div>
     </section>
     <div class="right-sidebar">
-        <div class="course-details">
-            <div class="course-header">
-                <p>Web Development Languages</p>
-                <h1>HTML</h1>
-                <div class="raiting">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
+        <div class="dark-background"></div>
+        <div class="details-container">
+            <div class="details-wrapper">
+                <div class="col col-main">
+                    <div class="course-header">
+                        <div class="details-header-wrapper">
+                            <p>Web Development Languages</p>
+                            <h3>HTML</h3>
+                            <div class="raiting">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="details-text-wrapper">
+                            <p>HTML (Hypertext Markuo Language) is the standard markup language for creating web pages
+                                and
+                                other
+                                information that can be displayed on a web browser. It provides a structure for content
+                                and
+                                defines
+                                how it should be displayes on a web page,
+                                including text, images, and multimedia, HTML is essential for cearting static web pages
+                                and
+                                is
+                                foundational technology for the World Wide Web.</p>
+                        </div>
+                    </div>
+                    <!-- <section class="sup-topics"> -->
+                        <ul class="sup-topics">
+                            <li class="main-head-line">HTML Sub Topics</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> <span> HTML syntax and struture</span></li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> <span> HTML syntax and struture</span></li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon><span> HTML syntax and struture</span></li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon><span> HTML syntax and struture</span></li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon><span>HTML syntax and struture</span></li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon><span>HTML syntax and struture</span></li>
+                        </ul>
+                    <!-- </section> -->
                 </div>
+                <aside class="col col-complementary">
+                    <img src="./Logos/javascript.jpg" alt="JavaScript" class="logo-img">
+                <div class="card_content">
+                    <p>HTML by <a href="">Sarah Smith</a></p>
+                    <div class="add-to-fav">
+                        <p>Interested about this topic?</p>
+                        <button class="fav-text-button">Add to Favourites <ion-icon name="heart-outline"
+                                aria-label="Favourite"></ion-icon></button>
+                        <p>Unlimited Credits</p>
+                    </div>
+                </div>
+                </aside>
             </div>
-            <p>HTML (Hypertext Markuo Language) is the standard markup language for creating web pages and other information that can be displayed on a web browser. It provides a structure for content and defines how it should be displayes on a web page,
-                including text, images, and multimedia, HTML is essential for cearting static web pages and is foundational technology for the World Wide Web.</p>
         </div>
-        <aside class="side-card">
-            <img src="./Logos/javascript.jpg" alt="JavaScript">
-            <div class="card_content">
-                <p>HTML by <a href="">Sarah Smith</a></p>
-                <div class="add-to-fav">
-                    <p>Interested about this topic?</p>
-                    <button>Add to Favourites <ion-icon name="heart-outline" aria-label="Favourite"></ion-icon></button>
-                    <p>Unlimited Credits</p>
-                </div>
-            </div>
-        </aside>
+        <!-- <footer>
+            <p>Developed with
+                <ion-icon name="heart"></ion-icon> © 2023
+            </p>
+        </footer> -->
     </div>
-    <section>
-        <div>hi</div>
-        <div>hi</div>
-        <div>hi</div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-    <footer>
-        <p>Developed with
-            <ion-icon name="heart"></ion-icon> © 2023</p>
-    </footer>
     <script src="index.js"></script>
 </body>
 
