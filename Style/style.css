@@ -36,6 +36,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* box-shadow: 0 0 3px 0 var(--lines-color); */
+    border-bottom: 1px solid var(--body-text);
+
 }
 
 header>h2 {
@@ -59,6 +62,9 @@ header>h2 {
 ion-icon {
     font-size: 1rem;
     --ionicon-stroke-width: 20px;
+    vertical-align: middle;
+}
+input{
     vertical-align: middle;
 }
 
@@ -135,14 +141,11 @@ ion-icon {
     background-color: var(--bg_default);
     margin-top: 20px;
     border-radius: 10px;
-    box-shadow: 0 15px 20px -7px rgba(191, 190, 190, 0.25);
+    /* margin:0.3rem; */
+    box-shadow: 0 0 3px 0 var(--lines-color);
 }
 
-.column-1 {
-    margin: 8px;
-}
-
-.column-1>input {
+.col-main>input {
     font-size: 1rem;
     border: none;
     background-color: transparent;
@@ -153,89 +156,127 @@ input:focus {
     outline: none;
 }
 
-.column-2 {
-    height: 60px;
-    margin: 10px;
+.col {
+    /* margin: 0.5rem; */
+    /* padding-left: 0.5rem;
+    padding-right: 0.5rem; */
+    /* padding: 0.2rem; */
+    /* margin: 0.4rem; */
+    /* padding: 1rem; */
+/* margin: 1rem; */
+
+}
+
+.col-main {
+    padding: 1em;
+    flex: 5;
+    /* padding-right: 2em;
+    padding-left: 2em; */
+    background-color: aqua;
+    /* height: 42.4rem; */
+}
+
+.col-complementary {
+    flex: 1;
+    background-color: aqua;
+    /* height: 420px;
+    width: 300px; */
+    /* background-color: var(--bg_default);
+    border: 1px solid var(--bg_default); */
     display: flex;
-    width: calc(100%/4);
-    justify-content: space-around;
-    align-items: center;
-    margin-top: -5px;
-    font-size: 0.8rem;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .options {
-    width: 100%;
-}
-
-.options>p {
-    padding-top: 0.5rem;
-}
-
-.option {
+    /* width: 100%; */
     display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-    width: 90%;
-    text-align: left;
+    flex-direction: column;
+    border-left: 1px solid var(--lines-color);
+    /* width: 200px; */
+    /* background-color: #e5981a; */
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;    
+    /* margin: 0; */
 }
+
+select{
+border: none;
+font-size: 1rem;
+font-weight: 400;
+margin: 0;
+display: flex;
+padding-inline-end: 4.5rem;
+}
+
 
 /*****************************************
 *               Search Result           *
 ****************************************/
 
-.search-result>h1 {
+.search-result>h2 {
     font-size: 1.5rem;
 }
 
 .search-result {
     margin-top: 1rem;
 }
-
+.card_image{
+    height: 8.5rem;
+}
 .card_image>img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
     vertical-align: middle;
 }
 
 .cards {
-    margin: 0;
-    padding: 1.5rem 0 0 0;
+    /* margin: 0;
     display: flex;
-    list-style: none;
     flex-flow: row wrap;
     justify-content: space-between;
-    grid-gap: 2.1rem;
+    grid-gap: 2.1rem; */
+    max-width: 1400px;
+    padding: 1.5rem 0 0 0;
+    list-style: none;  
+    margin: 0; 
+  display: grid;
+  gap: 2.1rem;
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(auto-fit, minmax(14.8rem, 1fr));
 }
-
+.card_content{
+    margin: 1rem;
+}
+/* 
 .cards::after {
     content: "";
     flex: auto;
-}
+} */
 
-.cards_item {
-    width: 17.8%;
-}
+/* .cards_item {
+    width: 400px;
+    padding: 1rem;
+  height: 17.5rem;
+} */
 
-.details_page_link {
+/* .details_page_link {
     list-style: none;
-}
+} */
 
 .card {
     background-color: var(--bg_default);
-    border-radius: 0.45rem;
-    box-shadow: 0 15px 20px -7px rgba(191, 190, 190, 0.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    height: 17.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 var(--lines-color);
+    height: 17rem;
+    /* width: 14.8rem; */
+    /* padding: 1rem; */
+  /* height: 4rem; */
 }
 
-.card_content {
+/* .card_content {
     padding-left: 0.899rem;
-}
+} */
 
 .card_title {
     font-size: 1rem;
@@ -270,6 +311,15 @@ input:focus {
     padding: 0;
 }
 
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(5, 1fr); }
+  }
+
 /*****************************************
 *               Favourites              *
 ****************************************/
@@ -282,7 +332,7 @@ input:focus {
     width: 100%;
     z-index: 1;
     height: 11rem;
-    box-shadow: 10px 0 0 0 rgba(191, 190, 190, 0.25);
+    box-shadow: 0 0 3px 0 var(--lines-color);
     display: none;
 }
 
@@ -314,7 +364,8 @@ input:focus {
 .fav_card_item {
     border-radius: 0.4rem;
     overflow: hidden;
-    box-shadow: 0 15px 20px -7px rgba(191, 190, 190, 0.25);
+    box-shadow: 0 0 3px 0 var(--lines-color);
+
 }
 
 .fav_card {
@@ -371,6 +422,17 @@ footer>p>ion-icon {
 
 /*700-1200*/
 
+@media only screen and (min-width: 950px) {
+    .search-bar {
+        display: flex;
+    }
+
+    .col {
+        margin-right: 2rem;
+        margin-left: 0;
+    }
+
+}
 @media screen and (max-width:1440px) {
     .triangle-left {
         right: 0;

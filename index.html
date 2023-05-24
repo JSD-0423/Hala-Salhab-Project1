@@ -18,7 +18,7 @@
 
 <body>
     <header class="container">
-        <h1>Web Topics</h1>
+        <h2>Web Topics</h2>
         <div class="nav-buttons">
             <button class="text-button" onclick="toggleDarkMode()">
                 <ion-icon name="moon-outline" aria-label="Dark Mode"></ion-icon>
@@ -45,210 +45,206 @@
     </section>
     <div class="container">
         <div class="search-bar" id="search-bar">
-            <div class="column-1">
+            <div class="col col-main">
                 <ion-icon name="search-outline" aria-label="Search"></ion-icon>
                 <input type="text" placeholder="Search the website..." />
             </div>
-            <div class="column-2">
-                <div class="options option-1">
+            <div class="col col-complementary">
+                <div class="options">
                     <p>Sort by</p>
-                    <div class="option">
-                        Deafult
-                        <ion-icon name="chevron-down-outline" aria-label="Sort options"></ion-icon>
-                    </div>
+                    <select name="sort" id="sort" class="option">
+                        <option value="none" selected disabled hidden>Deafult</option>
+                    </select>
                 </div>
                 <div class="options">
                     <p>Filter by</p>
-                    <div class="option">
-                        Deafult
-                        <ion-icon name="chevron-down-outline" aria-label="Filter options"></ion-icon>
-                    </div>
+                    <select name="filter" id="filter" class="option">
+                        <option value="none" selected disabled hidden>Deafult</option>
+                    </select>
                 </div>
             </div>
         </div>
         <main class="search-result">
-            <h1>"24" Web Topics Found</h1>
+            <h2>"24" Web Topics Found</h2>
             <ul class="cards">
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="./Logos/html.png" /></div>
-                        <div class="card_content section_1">
-                            <p class="card_text"><a href="details.html" class="details_page_link">Web Development
-                                    Languages</a></p>
-                            <h2 class="card_title">HTML</h2>
+                <li class="card">
+                    <!-- <div class="card"> -->
+                    <div class="card_image"><img src="./Logos/html.png" /></div>
+                    <div class="card_content section_1">
+                        <p class="card_text"><a href="details.html" class="details_page_link">Web Development
+                                Languages</a></p>
+                        <h2 class="card_title">HTML</h2>
+                    </div>
+                    <div class="card_content">
+                        <div class="raiting">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <div class="card_content section_2">
-                            <div class="raiting">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                            </div>
-                            <p class="card_text">Author: Sarah Smith</p>
+                        <p class="card_text">Author: Sarah Smith</p>
+                    </div>
+                    <!-- </div> -->
+                </li>
+                <li class="card">
+                    <!-- <div class="card"> -->
+                    <div class="card_image"><img src="./Logos/css.webp" /></div>
+                    <div class="card_content ">
+                        <p class="card_text">Web Development Languages</p>
+                        <h2 class="card_title">CSS</h2>
+                    </div>
+                    <div class="card_content">
+                        <div class="raiting">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
                         </div>
+                        <p class="card_text">Author: David Lee</p>
+                    </div>
+                    <!-- </div> -->
+                </li>
+                <li class="card">
+                    <!-- <div class="card"> -->
+                    <div class="card_image"><img src="./Logos/javascript.jpg" /></div>
+                    <div class="card_content ">
+                        <p class="card_text">Web Development Languages</p>
+                        <h2 class="card_title">JavaScript</h2>
+                    </div>
+                    <div class="card_content">
+                        <div class="raiting">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <p class="card_text">Author: Emily Chen</p>
+                    </div>
+                    <!-- </div> -->
+                </li>
+                <li class="card">
+                    <!-- <div class="card"> -->
+                    <div class="card_image"><img src="./Logos/jquery.png" /></div>
+                    <div class="card_content ">
+                        <p class="card_text"><a href="details.html" class="details_page_link">Frontend Frameworks and
+                                Libaries</a></p>
+                        <h2 class="card_title">jQuery</h2>
+                    </div>
+                    <div class="card_content">
+                        <div class="raiting">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <p class="card_text">Author: John Johnson</p>
+                        <!-- </div> -->
                     </div>
                 </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="./Logos/css.webp" /></div>
-                        <div class="card_content section_1">
-                            <p class="card_text">Web Development Languages</p>
-                            <h2 class="card_title">CSS</h2>
+                <li class="card">
+                    <!-- <div class="card"> -->
+                    <div class="card_image"><img src="./Logos/angular.png" /></div>
+                    <div class="card_content">
+                        <p class="card_text"><a href="details.html" class="details_page_link">Frontend Frameworks and
+                                Libaries</a></p>
+                        <h2 class="card_title">Angular</h2>
+                    </div>
+                    <div class="card_content">
+                        <div class="raiting">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <div class="card_content section_2">
-                            <div class="raiting">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                            </div>
-                            <p class="card_text">Author: David Lee</p>
-                        </div>
+                        <p class="card_text">Author: Jessica Davis</p>
+                        <!-- </div> -->
                     </div>
                 </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="./Logos/javascript.jpg" /></div>
-                        <div class="card_content section_1">
-                            <p class="card_text">Web Development Languages</p>
-                            <h2 class="card_title">JavaScript</h2>
+                <li class="card">
+                    <div class="card_image"><img src="./Logos/react.webp" /></div>
+                    <div class="card_content ">
+                        <p class="card_text"><a href="details.html" class="details_page_link">Frontend Frameworks and
+                                Libaries</a></p>
+                        <h2 class="card_title">React</h2>
+                    </div>
+                    <div class="card_content">
+                        <div class="raiting">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <div class="card_content section_2">
-                            <div class="raiting">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                            </div>
-                            <p class="card_text">Author: Emily Chen</p>
-                        </div>
+                        <p class="card_text">Author: Danial Brown</p>
                     </div>
                 </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="./Logos/jquery.png" /></div>
-                        <div class="card_content section_1">
-                            <p class="card_text"><a href="details.html" class="details_page_link">Frontend Frameworks and Libaries</a></p>
-                            <h2 class="card_title">jQuery</h2>
+                <li class="card">
+                    <div class="card_image"><img src="./Logos/vuejs.jpeg" /></div>
+                    <div class="card_content ">
+                        <p class="card_text"><a href="details.html" class="details_page_link">Frontend Frameworks and
+                                Libaries</a></p>
+                        <h2 class="card_title">Vue.js</h2>
+                    </div>
+                    <div class="card_content">
+                        <div class="raiting">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <div class="card_content section_2">
-                            <div class="raiting">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                            </div>
-                            <p class="card_text">Author: John Johnson</p>
-                        </div>
+                        <p class="card_text">Author: Ava Jones</p>
                     </div>
                 </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="./Logos/angular.png" /></div>
-                        <div class="card_content section_1">
-                            <p class="card_text"><a href="details.html" class="details_page_link">Frontend Frameworks and Libaries</a></p>
-                            <h2 class="card_title">Angular</h2>
+                <li class="card">
+                    <div class="card_image"><img src="./Logos/nodejs.webp" /></div>
+                    <div class="card_content ">
+                        <p class="card_text"><a href="details.html" class="details_page_link">Backend Frameworks and
+                                Libaries</a></p>
+                        <h2 class="card_title">Node.js</h2>
+                    </div>
+                    <div class="card_content">
+                        <div class="raiting">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <div class="card_content section_2">
-                            <div class="raiting">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                            </div>
-                            <p class="card_text">Author: Jessica Davis</p>
-                        </div>
+                        <p class="card_text">Author: Micheal Kim</p>
                     </div>
                 </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="./Logos/react.webp" /></div>
-                        <div class="card_content section_1">
-                            <p class="card_text"><a href="details.html" class="details_page_link">Frontend Frameworks and Libaries</a></p>
-                            <h2 class="card_title">React</h2>
+                <li class="card">
+                    <div class="card_image"><img src="./Logos/expressjs.webp" /></div>
+                    <div class="card_content">
+                        <p class="card_text"><a href="details.html" class="details_page_link">Backend Frameworks and
+                                Libaries</a></p>
+                        <h2 class="card_title">Express.js</h2>
+                    </div>
+                    <div class="card_content">
+                        <div class="raiting">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <div class="card_content section_2">
-                            <div class="raiting">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                            </div>
-                            <p class="card_text">Author: Danial Brown</p>
-                        </div>
+                        <p class="card_text">Author: Sophia Rodriguez</p>
                     </div>
                 </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="./Logos/vuejs.jpeg" /></div>
-                        <div class="card_content section_1">
-                            <p class="card_text"><a href="details.html" class="details_page_link">Frontend Frameworks and Libaries</a></p>
-                            <h2 class="card_title">Vue.js</h2>
-                        </div>
-                        <div class="card_content section_2">
-                            <div class="raiting">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                            </div>
-                            <p class="card_text">Author: Ava Jones</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="./Logos/nodejs.webp" /></div>
-                        <div class="card_content section_1">
-                            <p class="card_text"><a href="details.html" class="details_page_link">Backend Frameworks and Libaries</a></p>
-                            <h2 class="card_title">Node.js</h2>
-                        </div>
-                        <div class="card_content section_2">
-                            <div class="raiting">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                            </div>
-                            <p class="card_text">Author: Micheal Kim</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="./Logos/expressjs.webp" /></div>
-                        <div class="card_content section_1">
-                            <p class="card_text"><a href="details.html" class="details_page_link">Backend Frameworks and Libaries</a></p>
-                            <h2 class="card_title">Express.js</h2>
-                        </div>
-                        <div class="card_content section_2">
-                            <div class="raiting">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star-outline"></ion-icon>
-                            </div>
-                            <p class="card_text">Author: Sophia Rodriguez</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
+                <!-- <li class="cards_item">
                     <div class="card">
                         <div class="card_image"><img src="./Logos/ruby.jpeg" /></div>
-                        <div class="card_content section_1">
+                        <div class="card_content ">
                             <p class="card_text"><a href="details.html" class="details_page_link">Backend Frameworks and Libaries</a></p>
                             <h2 class="card_title">Ruby on Rails</h2>
                         </div>
-                        <div class="card_content section_2">
+                        <div class="card_content">
                             <div class="raiting">
                                 <ion-icon name="star"></ion-icon>
                                 <ion-icon name="star"></ion-icon>
@@ -267,7 +263,7 @@
                             <p class="card_text"><a href="details.html" class="details_page_link">Backend Frameworks and Libaries</a></p>
                             <h2 class="card_title">Django</h2>
                         </div>
-                        <div class="card_content section_2">
+                        <div class="card_content">
                             <div class="raiting">
                                 <ion-icon name="star"></ion-icon>
                                 <ion-icon name="star"></ion-icon>
@@ -286,7 +282,7 @@
                             <p class="card_text"><a href="details.html" class="details_page_link">Backend Frameworks and Libaries</a></p>
                             <h2 class="card_title">Flask</h2>
                         </div>
-                        <div class="card_content section_2">
+                        <div class="card_content">
                             <div class="raiting">
                                 <ion-icon name="star"></ion-icon>
                                 <ion-icon name="star"></ion-icon>
@@ -306,7 +302,7 @@
                             <p class="card_text"><a href="details.html" class="details_page_link">Databases and APIs</a></p>
                             <h2 class="card_title">NoSQL</h2>
                         </div>
-                        <div class="card_content section_2">
+                        <div class="card_content">
                             <div class="raiting">
                                 <ion-icon name="star"></ion-icon>
                                 <ion-icon name="star"></ion-icon>
@@ -325,7 +321,7 @@
                             <p class="card_text"><a href="details.html" class="details_page_link">Databases and APIs</a></p>
                             <h2 class="card_title">REST APIs</h2>
                         </div>
-                        <div class="card_content section_2">
+                        <div class="card_content">
                             <div class="raiting">
                                 <ion-icon name="star"></ion-icon>
                                 <ion-icon name="star"></ion-icon>
@@ -372,13 +368,13 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <footer>
-            <p>Developed with <ion-icon name="heart"></ion-icon> © 2023</p>
-        </footer>
+                    </li> -->
+            </ul>
+    </div>
+    </section>
+    <footer>
+        <p>Developed with <ion-icon name="heart"></ion-icon> © 2023</p>
+    </footer>
     </div>
     <script src="index.js"></script>
 </body>
