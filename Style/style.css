@@ -22,7 +22,9 @@ h3 {
     margin: 0;
 }
 
-
+input,select{
+    background-color: transparent;
+}
 /*****************************************
 *               Header                  *
 ****************************************/
@@ -144,11 +146,16 @@ select {
 }
 
 
-
 .card_image {
     height: 8.5rem;
+    background-color: var(--bg_default);
 }
-
+a{
+    color: var(--body-text);
+}
+a:hover{
+    cursor: pointer;
+}
 .card_image>img {
     max-width: 100%;
     height: 100%;
