@@ -65,27 +65,29 @@ ion-icon {
 }
 
 .rectangle_wrapper {
-    height: 5rem;
+    height: 3rem;
     width: 100%;
     position: relative;
-    overflow: hidden;
-}
-
-.triangle-right {
-    border-top: 1px solid transparent;
-    border-right: 100rem solid var(--brand-secondary);
-    border-bottom: 4.1rem solid transparent;
-    position: absolute;
 }
 
 .triangle-left {
-    background: linear-gradient(to right,
-            var(--brand-primary),
-            var(--brand-secondary));
-    border-left: 100rem solid var(--brand-primary);
-    border-bottom: 4rem solid transparent;
+    background: linear-gradient(to right, var(--brand-primary), var(--brand-secondary));
+    height: 120%;
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
     position: absolute;
     z-index: 1;
+    top: 0;
+}
+
+.triangle-right {
+    background: linear-gradient(to left, var(--brand-secondary), var(--brand-primary));
+    height: 120%;
+    width: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .text-middle>h3 {
@@ -98,6 +100,7 @@ ion-icon {
 /*****************************************
 *               Search Bar              *
 ****************************************/
+
 #search-bar {
     background-color: var(--bg_default);
 }
@@ -105,6 +108,10 @@ ion-icon {
 
 select {
     font-weight: 400;
+}
+
+.search-settings{
+    height: 100%;
 }
 
 @media screen and (min-width :767px) {
@@ -135,6 +142,7 @@ select {
     margin-left: 3.6rem;
     margin-right: 3.6rem;
 }
+
 
 
 .card_image {

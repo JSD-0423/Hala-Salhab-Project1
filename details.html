@@ -39,21 +39,27 @@
             </button>
         </div>
     </header>
-    <div class="container d-flex align-items-center justify-content-center my-3">
-        <div class="mx-auto text-start text-middle">
-            <h3>Welcome to our website!</h3>
-            <p>We have a new desgin that's fresh, modern, and easy to use.</p>
+    <section class="banner">
+        <div class="rectangle_wrapper">
+            <div class="triangle-left"></div>
+            <div class="triangle-right"></div>
         </div>
-    </div>
-    <div class="right-sidebar">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="mx-auto text-start text-middle">
+                <h3>Welcome to our website!</h3>
+                <p>We have a new desgin that's fresh, modern, and easy to use.</p>
+            </div>
+        </div>
+    </section>
+    <div class="d-flex justify-content-center flex-wrap position-relative">
         <div class="dark-background"></div>
         <div class="details-container">
             <div class="details-wrapper">
-                <div class="col col-main">
+                <div class="col details">
                     <div class="course-header">
                         <div class="details-header-wrapper">
                             <p>Web Development Languages</p>
-                            <h3>HTML</h3>
+                            <h1>HTML</h1>
                             <div class="raiting">
                                 <ion-icon name="star"></ion-icon>
                                 <ion-icon name="star"></ion-icon>
@@ -111,13 +117,13 @@
                         </tr>
                     </table>
                 </div>
-                <aside class="col col-complementary">
+                <aside class="col add_to_fav_card">
                     <img src="./Logos/javascript.jpg" alt="JavaScript" class="logo-img">
                     <div class="card_content">
                         <p>HTML by <a href="">Sarah Smith</a></p>
                         <div class="add-to-fav">
                             <p>Interested about this topic?</p>
-                            <button class="fav-text-button">Add to Favourites <ion-icon name="heart-outline"
+                            <button class="fav-text-button">Add to Favourites <ion-icon class="align-middle" name="heart-outline"
                                     aria-label="Favourite"></ion-icon></button>
                             <p>Unlimited Credits</p>
                         </div>
@@ -125,12 +131,10 @@
                 </aside>
             </div>
         </div>
-        <!-- <footer>
-            <p>Developed with
-                <ion-icon name="heart"></ion-icon> © 2023
-            </p>
-        </footer> -->
     </div>
+    <footer class="container-fluid text-center">
+        Developed with <ion-icon name="heart" class="align-middle"></ion-icon> © 2023
+    </footer>
     <script src="index.js"></script>
 </body>
 

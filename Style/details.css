@@ -1,27 +1,24 @@
 @import "./variables.css";
 
+/*****************************************
+*               Resetting                *
+****************************************/
+
 body {
     margin: 0;
     box-sizing: border-box;
     background-color: var(--bg_body);
 }
 
-/* header>h1 {
-    font-size: 1.5rem;
-} */
+/*****************************************
+*               Detailes                *
+****************************************/
 
 .logo-img{
     height: 48%;
     width: 100%;
     vertical-align: middle;
     object-fit: cover;
-}
-
-.right-sidebar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
 }
 
 .dark-background {
@@ -43,15 +40,16 @@ body {
     margin: 2rem;
 }
 
-.col-main {
+.details {
     flex: 1.8;
     padding-right: 2em;
     padding-left: 2em;
     height: 42.4rem;
 }
 
-.col-complementary {
+.add_to_fav_card{
     flex: 1.059;
+    justify-content: center;
     height: 420px;
     width: 300px;
     background-color: var(--bg_default);
@@ -59,7 +57,7 @@ body {
 }
 
 
-.details-header-wrapper>h3 {
+.details-header-wrapper>h1 {
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -70,7 +68,6 @@ body {
 }
 
 .details-text-wrapper>summary {
-    /* background-clip: content-box; */
     font-size: 1rem;
     margin-top: 1rem;
     line-height: 22px;
@@ -145,14 +142,11 @@ padding: 0.5rem;
 .fav-text-button >ion-icon{
     font-size: 1.7rem;
     --ionicon-stroke-width: 22px;
-    vertical-align: middle;
-
 }
+
 footer {
-    position: absolute;
-    top: 30rem;
-    text-align: center;
-    background-color: #b3e888;
+    position: fixed;
+    bottom: 1rem;
     width: 100%;
 }
 
