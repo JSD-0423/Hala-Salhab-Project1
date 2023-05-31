@@ -22,11 +22,6 @@ h3 {
     margin: 0;
 }
 
-/* .container-fluid {
-    padding-inline: 5rem;
-    margin: 0  4em 0 4em;
-    padding: 3em;
-} */
 
 /*****************************************
 *               Header                  *
@@ -34,19 +29,7 @@ h3 {
 
 #header {
     height: 72px;
-    /* width: 100%; */
     background-color: var(--bg_default);
-    /* background-color: #e50981a; */
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    /* box-shadow: 0 0 3px 0 var(--lines-color); */
-    /* border-bottom: 1px solid var(--body-text); */
-    /* padding: 4rem; */
-    /* mobile 1rem */
-    /* padding-inline: 5rem; */
-    /* padding-left: 3rem;
-    padding-right: 3rem; */
 }
 
 .brand-primary-text {
@@ -70,12 +53,8 @@ h3 {
 ion-icon {
     font-size: 1rem;
     --ionicon-stroke-width: 20px;
-    /* vertical-align: middle; */
 }
 
-/* input{
-    vertical-align: middle;
-} */
 
 /*****************************************
 *               Banner                  *
@@ -83,7 +62,6 @@ ion-icon {
 
 .banner {
     background-color: var(--bg_default);
-    height: 112px;
 }
 
 .rectangle_wrapper {
@@ -101,7 +79,6 @@ ion-icon {
 }
 
 .triangle-left {
-    background-color: red;
     background: linear-gradient(to right,
             var(--brand-primary),
             var(--brand-secondary));
@@ -111,37 +88,17 @@ ion-icon {
     z-index: 1;
 }
 
-.text-wrapper {
-    overflow-wrap: break-word;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -1.5rem;
-}
-
-.welcome-text {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1rem;
-}
-
-.welcome-text>h1 {
+.text-middle>h3 {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--brand-secondary);
 }
 
-.welcome-text>p {
-    text-align: start;
-    font-size: 1rem;
-}
 
 /*****************************************
 *               Search Bar              *
 ****************************************/
 #search-bar {
-    margin-top: 8rem;
     background-color: var(--bg_default);
 }
 
@@ -160,16 +117,7 @@ select {
     }
 }
 
-@media screen and (max-width:570px) {
-    /* select {
-        margin-left: 20px;
-        margin-right: 1rem;
 
-    } */
-    .container{
-        width: 90%;
-    }
-}
 
 
 
@@ -183,28 +131,16 @@ select {
 }
 
 .search-result {
-    /* margin-top: 1rem; */
+    margin-top: 1.6rem;
     margin-left: 3.6rem;
     margin-right: 3.6rem;
-    background-color: #e5981a;
 }
 
-@media screen and (max-width:600px) {
-    .search-result {
-        /* margin-top: 1rem; */
-        margin-left: 1rem;
-        margin-right: 1rem;
-        background-color: #1ae568;
-    } 
-}
 
-/* .card-img-top {
-    height: 65%;
-    max-width: 100%;
-} */
-.card_image{
+.card_image {
     height: 8.5rem;
 }
+
 .card_image>img {
     max-width: 100%;
     height: 100%;
@@ -213,8 +149,7 @@ select {
 }
 
 .cards {
-    /* padding: 1.5rem 0 0 0; */
-    margin-top:  1.8rem;
+    margin-top: 1.8rem;
     display: grid;
     gap: 2.1rem;
     grid-template-columns: repeat(auto-fit, minmax(14.8rem, 1fr));
@@ -222,8 +157,6 @@ select {
 
 .card {
     background-color: var(--bg_default);
-    /* border-radius: 10px; */
-    /* box-shadow: 0 0 0 0 var(--lines-color); */
     height: 17.4rem;
 }
 
@@ -237,31 +170,21 @@ select {
 
 .card_text {
     font-size: 0.798rem;
-    /* line-height: 1.2; */
     font-weight: 400;
-    /* padding-top: 2.2rem; */
 }
 
-.text-body-secondary{
+.text-body-secondary {
     font-size: 0.788rem;
-    /* margin-top: 3em; */
 
 }
+
 .raiting>ion-icon {
     font-size: 1rem;
     color: #e5981a;
-    /* letter-spacing: 0; */
     margin: -0.1rem;
 }
 
-@media (min-width: 600px) {
-    .cards { grid-template-columns: repeat(2, 1fr); }
-  }
-  
-  /* Screen larger than 900px? 3 columns */
-  @media (min-width: 1200px) {
-    .cards { grid-template-columns: repeat(5, 1fr); }
-  }
+
 
 /*****************************************
 *               Favourites              *
@@ -274,41 +197,19 @@ select {
     background-color: var(--bg_default);
     width: 100%;
     z-index: 1;
-    height: 11rem;
-    box-shadow: 0 0 3px 0 var(--lines-color);
     display: none;
 }
 
-.favourite {
-    margin-left: 3.5rem;
-    font-weight: 700;
-}
 
-.favourite>h5 {
-    font-size: 1rem;
-    padding-top: 1rem;
+.favourite_container>p {
+    font-weight: 700;
 }
 
 .fav_cards {
     list-style: none;
-    margin: 0;
-    padding: 1rem 0 0 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    grid-gap: 1rem;
-}
-
-.fav_cards::after {
-    content: "";
-    flex: auto;
-}
-
-.fav_card_item {
-    border-radius: 0.4rem;
-    overflow: hidden;
-    box-shadow: 0 0 3px 0 var(--lines-color);
-
+    gap: 1rem;
 }
 
 .fav_card {
@@ -321,21 +222,10 @@ select {
 }
 
 .fav_card_image>img {
-    margin: 0;
-    padding: 0;
+    object-fit: fill;
     width: 100%;
-    max-height: 100%;
+    height: 100%;
     vertical-align: middle;
-}
-
-.fav_card_content {
-    padding-left: 0.5rem;
-    padding-top: 0.5rem;
-    line-height: 1.1rem;
-}
-
-.fav_card_content>.raiting {
-    margin: 0;
 }
 
 /*****************************************
@@ -349,61 +239,37 @@ footer {
 footer>ion-icon {
     color: var(--heart-color);
     font-size: 1.5rem;
-    /* vertical-align: middle; */
 }
 
 /*****************************************
 *               Responsive              *
 ****************************************/
 
-@media screen and (max-width:1440px) {
-    .triangle-left {
-        right: 0;
-        border-bottom: 5rem solid transparent;
-    }
 
-    .triangle-right {
-        left: 0;
-        border-bottom: 4rem solid transparent;
+
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media only screen and (min-width:720px) and (max-width:1100px) {
-    .triangle-left {
-        right: 0;
-        border-bottom: 7rem solid transparent;
-    }
+@media screen and (max-width:570px) {
 
-    .triangle-right {
-        left: 0;
-        border-bottom: 6rem solid transparent;
+    .container {
+        width: 90%;
     }
-
 }
 
-@media only screen and (max-width: 720px) {
-
-    .banner {
-        height: 7.5rem;
-    }
-
-    .triangle-left {
-        right: 0;
-        border-bottom: 7rem solid transparent;
-    }
-
-    .triangle-right {
-        left: 0;
-        border-bottom: 6rem solid transparent;
-    }
-
-    .text-wrapper {
-        margin: -2.5rem 0 0 1rem;
-        line-height: 2rem;
-    }
-
+@media screen and (max-width:600px) {
     .search-result {
-        margin-top: 3.5rem;
+        /* margin-top: 1rem; */
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
+}
 
+@media (min-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
