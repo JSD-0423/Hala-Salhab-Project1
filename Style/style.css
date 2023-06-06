@@ -26,6 +26,10 @@ input,select{
     background-color: transparent;
 }
 
+*:focus {
+    outline: none;
+}
+
 body.dark-mode{
     background-color: var(--bg_body-dark);
     color: var(--body-text-dark);
