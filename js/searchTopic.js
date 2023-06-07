@@ -4,7 +4,8 @@ import { debounce } from './debouncer.js';
 export const searchTopics = () => {
     let value = searchInput.value.toLowerCase();
 
-    let topics = JSON.parse(localStorage.getItem("Web Topics"))
+    let topics = localStorage.getItem("Web Topics")
+    console.log(topics)
     let searchResult = [];
     history.pushState({}, "page 2", `?topic=${value}`); 
     console.log(history)
