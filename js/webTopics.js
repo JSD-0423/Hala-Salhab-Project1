@@ -1,8 +1,8 @@
 import { ml } from "./nestedHtml.js";
 
 export const displayWebTopics=(topics)=> {
-    let cardsContainer = document.getElementById('cards');
-        topics.forEach(element => {
+    // let cardsContainer = document.getElementById('cards');
+        return topics.forEach(element => {
             let card = ml("li", { id: element.id },
                 ml("div", { class: "card border-0 shadow-sm h-100", id: `topic-${element.id}` }, [
                     ml("img", { src: `./Logos/${element.image}`, class: "card-img-top h-50", alt: element.image }),
@@ -19,6 +19,6 @@ export const displayWebTopics=(topics)=> {
                         ml("p", { class: "card_text" }, `Author: ${element.name}`)
                     ])]));
 
-            cardsContainer.appendChild(card)
+            // cardsContainer.appendChild(card)
         });
 }
