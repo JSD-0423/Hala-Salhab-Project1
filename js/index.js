@@ -5,14 +5,6 @@ import { fetchData } from './fetchData.js';
 import {searchTopics} from './searchTopic.js'
 import {goToDetailsPage} from './goToDetailsPage.js'
 
-// function showHideFav() {
-//     let favourites = document.getElementById("favourite");
-//     if (favourites.style.display === "") {
-//         favourites.style.display = "block";
-//     } else if (favourites.style.display == "block") {
-//         favourites.style.display = "";
-//     }
-// }
 
 const fetchWebTopics = async () => {
     let spinner = document.getElementById("spinner");
@@ -21,9 +13,11 @@ const fetchWebTopics = async () => {
     let categoryList = document.getElementById('filter');
     let cardsContainer = document.getElementById('cards');
     let detailPageLink;
-    // addevent(detailPageLink)
     let topics;
     let categories;
+
+    //Favorite topics
+    let favourites = [];
     //show  spinner when loading
     spinner.style.display = "block";
 
@@ -45,10 +39,7 @@ const fetchWebTopics = async () => {
         spinner.style.display = "none";
         showLoadingRestule.innerHTML = 'Something went wrong. Web topics failed to load';
     }
-    // localStorage.setItem("Web Topics", topics)
-    // if(topics){
-    //     searchTopics(topics)
-    // }
+
     detailPageLink.forEach(a =>{
         a.addEventListener('click', () => goToDetailsPage(a.id))
     })

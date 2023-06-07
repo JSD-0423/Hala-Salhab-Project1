@@ -58,8 +58,8 @@
                 <div class="col details">
                     <div class="course-header">
                         <div class="details-header-wrapper">
-                            <p>Web Development Languages</p>
-                            <h1>HTML</h1>
+                            <p id="category"></p>
+                            <h1 id="course-topic"></h1>
                             <div class="raiting">
                                 <ion-icon name="star"></ion-icon>
                                 <ion-icon name="star"></ion-icon>
@@ -69,57 +69,18 @@
                             </div>
                         </div>
                         <div class="details-text-wrapper list-unstyled">
-                            <summary>HTML (Hypertext Markuo Language) is the standard markup language for creating web
-                                pages
-                                and
-                                other
-                                information that can be displayed on a web browser. It provides a structure for content
-                                and
-                                defines
-                                how it should be displayes on a web page,
-                                including text, images, and multimedia, HTML is essential for cearting static web pages
-                                and
-                                is
-                                foundational technology for the World Wide Web.</summary>
+                            <summary id="description"></summary>
                         </div>
                     </div>
                     <table class="table my-5" id="topics-table">
                         <tr>
-                            <th class="main-head-line">HTML Sub Topics</th>
-                        </tr>
-                        <tr>
-                            <td><ion-icon name="checkmark-circle-outline"></ion-icon> <span> HTML syntax and
-                                    struture</span></td>
-                        </tr>
-                        <tr>
-                            <td><ion-icon name="checkmark-circle-outline"></ion-icon> <span> HTML syntax and
-                                    struture</span></td>
-                        </tr>
-                        <tr>
-                            <td><ion-icon name="checkmark-circle-outline"></ion-icon> <span> HTML syntax and
-                                    struture</span></td>
-                        </tr>
-                        <tr>
-                            <td><ion-icon name="checkmark-circle-outline"></ion-icon> <span> HTML syntax and
-                                    struture</span></td>
-                        </tr>
-                        <tr>
-                            <td><ion-icon name="checkmark-circle-outline"></ion-icon> <span> HTML syntax and
-                                    struture</span></td>
-                        </tr>
-                        <tr>
-                            <td><ion-icon name="checkmark-circle-outline"></ion-icon> <span> HTML syntax and
-                                    struture</span></td>
-                        </tr>
-                        <tr>
-                            <td><ion-icon name="checkmark-circle-outline"></ion-icon> <span> HTML syntax and
-                                    struture</span></td>
+                            <th class="main-head-line"></th>
                         </tr>
                     </table>
                 </div>
-                <aside class="col add_to_fav_card">
-                    <img src="./Logos/javascript.jpg" alt="JavaScript" class="logo-img">
-                    <div class="card_content">
+                <aside class="col add_to_fav_card card">
+                    <!-- <img src="./Logos/javascript.jpg" alt="JavaScript" class="logo-img"> -->
+                    <!-- <div class="card_content">
                         <p>HTML by <a href="">Sarah Smith</a></p>
                         <div class="add-to-fav">
                             <p>Interested about this topic?</p>
@@ -127,7 +88,7 @@
                                     aria-label="Favourite"></ion-icon></button>
                             <p>Unlimited Credits</p>
                         </div>
-                    </div>
+                    </div> -->
                 </aside>
             </div>
         </div>
@@ -167,7 +128,8 @@
     <footer class="container-fluid text-center">
         Developed with <ion-icon name="heart" class="align-middle"></ion-icon> © 2023
     </footer>
-    <script src="index.js"></script>
+    <script type="module" src="js/details.js"></script>
+    <!-- <script type="module" src="index.js"></script> -->
 </body>
 
 </html>
