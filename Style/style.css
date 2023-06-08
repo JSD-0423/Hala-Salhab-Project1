@@ -22,7 +22,8 @@ h3 {
     margin: 0;
 }
 
-input,select{
+input,
+select {
     background-color: transparent;
 }
 
@@ -30,79 +31,111 @@ input,select{
     outline: none;
 }
 
-body.dark-mode{
+/*****************************************
+*               Dark Mode               *
+****************************************/
+
+body.dark-mode {
     background-color: var(--bg_body-dark);
     color: var(--body-text-dark);
 }
 
-body.dark-mode #header{
+body.dark-mode #header {
     background-color: var(--bg_default-dark);
 }
-body.dark-mode .text-button{
-    border: 1px solid var(--lines-color-dark);
-    color: var(--body-text-dark);
 
+body.dark-mode .text-button {
+    /* border: 1px solid var(--lines-color-dark); */
+    color: var(--body-text-dark);
 }
-body.dark-mode #search-bar{
+
+body.dark-mode #search-bar {
     background-color: var(--bg_default-dark);
     box-shadow: none;
 }
+
 body.dark-mode .banner {
     background-color: var(--bg_default-dark);
 }
-body.dark-mode .card{
+
+body.dark-mode .card {
     background-color: var(--bg_default-dark);
     box-shadow: none;
     color: var(--body-text-dark);
 }
 
-body.dark-mode a{
+body.dark-mode img {
+    background-color: var(--bg_default);
+
+}
+
+body.dark-mode {
+    --lines-color: var(--lines-color-dark);
+}
+
+
+body.dark-mode a {
     color: var(--body-text-dark);
 
 }
 
-body.dark-mode .search-settings{
+body.dark-mode .search-settings {
     /* border: 1px solid var(--lines-color-dark); */
     color: var(--body-text-dark);
     background-color: transparent;
 }
-/* light-mode */
-body.light-mode{
+body.dark-mode #favourite {
+    background-color: var(--bg_default-dark);
+}
+
+/*****************************************
+*               Light Mode               *
+****************************************/
+body.light-mode {
     background-color: var(--bg_body);
     color: var(--body-text);
 }
 
-body.light-mode #header{
+body.light-mode #header {
     background-color: var(--bg_default);
 }
-body.light-mode .text-button{
+
+body.light-mode .text-button {
     border: 1px solid var(--lines-color);
     color: var(--body-text);
 
 }
-body.light-mode #search-bar{
+
+body.light-mode #search-bar {
     background-color: var(--bg_default);
     box-shadow: none;
 }
+
 body.light-mode .banner {
     background-color: var(--bg_default);
 }
-body.light-mode .card{
+
+body.light-mode .card {
     background-color: var(--bg_default);
     box-shadow: none;
     color: var(--body-text);
 }
 
-body.light-mode a{
+body.light-mode a {
     color: var(--body-text);
 
 }
 
-body.light-mode .search-settings{
+body.light-mode .search-settings {
     /* border: 1px solid var(--lines-color-dark); */
     color: var(--body-text);
     background-color: transparent;
 }
+
+body.light-mode {
+    --lines-color: var(--lines-color);
+}
+
 /*****************************************
 *               Header                  *
 ****************************************/
@@ -189,10 +222,6 @@ ion-icon {
 select {
     font-weight: 400;
 }
-/* 
-.search-settings{
-    height: 100%;
-} */
 
 @media screen and (min-width :767px) {
     .border-md-start {
@@ -210,7 +239,7 @@ select {
 *               Search Result           *
 ****************************************/
 #spinner {
-    display: none; 
+    display: none;
 }
 
 
@@ -226,10 +255,11 @@ select {
 }
 
 
-a{
+a {
     color: var(--body-text);
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
 }
 
@@ -263,7 +293,7 @@ a:hover{
 *               Favourites              *
 ****************************************/
 
-#favourite{
+#favourite {
     position: fixed;
     bottom: 0;
     left: 0;

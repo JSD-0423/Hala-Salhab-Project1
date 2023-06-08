@@ -29,13 +29,13 @@
         id="header">
         <h6 class="brand-primary-text align-middle">Web Topics</h6>
         <div class="">
-            <button class="d-inline-block text-button">
+            <button class="d-inline-block text-button" id="toggle-theme">
                 <ion-icon name="moon-outline" aria-label="Dark Mode" class="align-middle"></ion-icon>
-                <span class="d-sm-inline-block d-none" onclick="toggleDarkModeDetails()">Dark Mode</span>
+                <span class="d-sm-inline-block d-none">Dark Mode</span>
             </button>
-            <button class="d-inline-block  text-button">
+            <button class="d-inline-block text-button" onclick="showHideFav()">
                 <ion-icon name="heart-outline" aria-label="Favourite" class="align-middle"></ion-icon>
-                <span class="d-sm-inline-block d-none" onclick="showHideFav()">Favourites</span>
+                <span class="d-sm-inline-block d-none">Favourites</span>
             </button>
         </div>
     </header>
@@ -79,16 +79,6 @@
                     </table>
                 </div>
                 <aside class="col add_to_fav_card card">
-                    <!-- <img src="./Logos/javascript.jpg" alt="JavaScript" class="logo-img"> -->
-                    <!-- <div class="card_content">
-                        <p>HTML by <a href="">Sarah Smith</a></p>
-                        <div class="add-to-fav">
-                            <p>Interested about this topic?</p>
-                            <button class="fav-text-button">Add to Favourites <ion-icon class="align-middle" name="heart-outline"
-                                    aria-label="Favourite"></ion-icon></button>
-                            <p>Unlimited Credits</p>
-                        </div>
-                    </div> -->
                 </aside>
             </div>
         </div>
@@ -104,6 +94,8 @@
     <!-- <script type="module" src="index.js"></script> -->
     <script src="js/showHideFav.js"></script>
     <script src="js/displayFavoriteTopics.js"></script>
+    <script src="./js/darkmode.js"></script>
+    
 </body>
 
 </html>

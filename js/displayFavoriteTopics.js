@@ -24,7 +24,7 @@ function displayFavoriteTopics() {
         cardTitle.classList.add('card-title');
         cardTitle.textContent = topic.topic;
         const rating = document.createElement('div');
-        rating.classList.add('rating');
+        rating.classList.add('raiting');
         for (let i = 0; i < topic.rating; i++) {
             const starIcon = document.createElement('ion-icon');
             starIcon.setAttribute('name', 'star');

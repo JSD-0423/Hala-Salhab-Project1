@@ -11,6 +11,15 @@ body {
 }
 
 /*****************************************
+*               Dark Mode               *
+****************************************/
+
+body.dark-mode table{
+    border: 1px solid var(--lines-color-dark);
+    background-color: var(--bg_default-dark);
+    color: var(--body-text-dark);
+}
+/*****************************************
 *               Detailes                *
 ****************************************/
 
