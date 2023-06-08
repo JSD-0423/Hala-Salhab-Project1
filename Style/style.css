@@ -349,13 +349,6 @@ footer>ion-icon {
 ****************************************/
 
 
-
-@media (min-width: 600px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media screen and (max-width:570px) {
 
     .container {
@@ -368,11 +361,5 @@ footer>ion-icon {
         /* margin-top: 1rem; */
         margin-left: 1rem;
         margin-right: 1rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .cards {
-        grid-template-columns: repeat(5, 1fr);
     }
 }

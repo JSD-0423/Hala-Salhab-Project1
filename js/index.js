@@ -30,7 +30,6 @@ const fetchWebTopics = async () => {
         //loading topics into DOM
         cardsContainer.append(...displayWebTopics(topics))
         detailPageLink = Array.from(document.getElementsByClassName('details-page-link'));
-        // addevent(detailPageLink);
         spinner.style.display = "none";
         webTopicsContainer.style.display = "block";
     } catch (e) {
