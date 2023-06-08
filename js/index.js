@@ -16,8 +16,6 @@ const fetchWebTopics = async () => {
     let topics;
     let categories;
 
-    //Favorite topics
-    let favourites = [];
     //show  spinner when loading
     spinner.style.display = "block";
 
