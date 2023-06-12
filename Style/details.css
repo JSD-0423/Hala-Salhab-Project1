@@ -22,21 +22,24 @@ body {
 }
 
 .dark-background {
-    height: 17.4rem;
     background-color: var(--body-text);
-    position: absolute;
-    width: 100%;
+    color: #fff;
 }
 
 .details-container {
-    position: absolute;
+    /* position: absolute; */
     color: #fff;
     max-width: 60em;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
 }
 
-.col {
+.details{
+    background-color: bisque;
+    margin-left: 19%;
+    width: 38%;
+}
+/* .col {
     margin: 2rem;
 }
 
@@ -44,16 +47,21 @@ body {
     flex: 1.8;
     padding-right: 2em;
     padding-left: 2em;
-    height: 42.4rem;
-}
+} */
 
-.add_to_fav_card{
-    flex: 1.059;
-    justify-content: center;
-    height: 420px;
-    width: 300px;
-    background-color: var(--bg_default);
-    border: 1px solid var(--bg_default);
+.card{
+    background-color: #fff;
+    width: 20rem;
+    height: fit-content;
+    /* float: right; */
+
+    position: absolute;
+    /* margin-top: 15px; */
+    right: 19%;
+    top: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1),
+      0px 0px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -144,11 +152,11 @@ padding: 0.5rem;
     --ionicon-stroke-width: 22px;
 }
 
-footer {
+/* footer {
     position: fixed;
     bottom: 1rem;
     width: 100%;
-}
+} */
 
 @media only screen and (min-width: 950px) {
     .details-wrapper {
