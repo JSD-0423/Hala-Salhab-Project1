@@ -154,7 +154,6 @@ body.light-mode {
 .text-button {
     font-weight: 400;
     font-size: 0.899rem;
-    /* height: 32px; */
     background-color: var(--bg_defaul);
     text-align: center;
     border: 1px solid var(--lines-color);

@@ -1,0 +1,31 @@
+@import "./variables.css";
+/*****************************************
+*               Resetting                *
+****************************************/
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--bg_body);
+  color: var(--body-text);
+}
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+input,
+select {
+  background-color: transparent;
+}
+
+*:focus {
+  outline: none;
+}

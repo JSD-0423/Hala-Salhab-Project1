@@ -1,0 +1,11 @@
+
+#header {
+    height: 72px;
+    background-color: var(--bg_default);
+}
+
+.brand-primary-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--brand-primary);
+}
