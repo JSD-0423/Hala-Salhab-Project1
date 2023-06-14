@@ -3,7 +3,7 @@ import './TopicCard.css'
 function TopicCard(props) {
     return (
         <li>
-            <a className="card border-0 shadow-sm h-100 text-decoration-none icon-link">
+            <div className="card border-0 shadow-sm text-decoration-none icon-link w-100">
                 <img src="https://austingil.com/wp-content/uploads/HTML-Blog-Cover.svg" alt="html-logo" className="card-img-top h-50" />
                 <div className="card-body text-truncate d-flex flex-column gap-2 justify-content-start w-100">
                     <div>
@@ -12,8 +12,8 @@ function TopicCard(props) {
                     </div>
                     <div className='mt-1'>
                         <div className="raiting">
-                            <ion-icon name="star" className="star"></ion-icon>
-                            <ion-icon name="star" className="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
@@ -21,7 +21,7 @@ function TopicCard(props) {
                         <p className="card_text m-0 mt-2" id='author'>Author: {props.author}</p>
                     </div>
                 </div>
-            </a>
+            </div>
         </li>
     )
 }

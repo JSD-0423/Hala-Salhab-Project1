@@ -30,6 +30,9 @@ select {
   outline: none;
 }
 
+#cards-container{
+  margin-top: -1rem;
+}
 /* @media screen and (max-width:570px) {
 
   .container {
