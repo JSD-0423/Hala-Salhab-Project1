@@ -1,0 +1,20 @@
+table{
+    border: 1px solid var(--lines-color);
+    border-radius: 10px;
+    background-color: var(--bg_default);
+}
+
+
+.main-head-line {
+    font-size: 1.5rem;
+}
+
+td>ion-icon {
+    color: var(--brand-secondary);
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+td>span{
+padding: 0.5rem;
+}

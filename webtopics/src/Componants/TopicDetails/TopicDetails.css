@@ -1,0 +1,33 @@
+.dark-background {
+    background-color: var(--body-text);
+    color: #fff;
+}
+
+.details-container {
+    /* position: absolute; */
+    color: #fff;
+    max-width: 60em;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+.details{
+    background-color: bisque;
+    margin-left: 19%;
+    width: 38%;
+}
+.details-header-wrapper>h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.details-header-wrapper>p {
+    color: var(--brand-secondary);
+    font-weight: 400;
+}
+
+.details-text-wrapper>summary {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 22px;
+}
