@@ -29,3 +29,10 @@ select {
 *:focus {
   outline: none;
 }
+
+/* @media screen and (max-width:570px) {
+
+  .container {
+      width: 90%;
+  }
+} */
