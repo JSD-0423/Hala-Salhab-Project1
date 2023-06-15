@@ -3,18 +3,18 @@ import './FavoriteCard.css'
 
 function FavoriteCard() {
     return (
-        <div className="card">
-            <img src="./Logos/javascript.jpg" alt="JavaScript" className="logo-img" />
-            <div className="card_content">
-                <p>HTML by <a href="">Sarah Smith</a></p>
-                <div className="add-to-fav">
-                    <p>Interested about this topic?</p>
-                    <button className="fav-text-button">Add to Favourites <ion-icon className="align-middle"
+        <div className="fav-card card rounded-0 border-3 border-white shadow-none">
+        <img src="https://austingil.com/wp-content/uploads/HTML-Blog-Cover.svg" alt="JavaScript" className="card-img-top"/>
+        <div className="card-body p-3 pt-5">
+            <p><span className='fw-bold'>HTML</span> by <span className='text-decoration-underline bs-link-hover-color'>Sarah Smith</span></p>
+            <div className="add-to-fav p-3">
+                <p className='mb-1'>Interested about this topic?</p>
+                <button className="fav-text-button w-100 border-0">Add to Favourites <ion-icon className="align-middle"
                         name="heart-outline" aria-label="Favourite"></ion-icon></button>
-                    <p>Unlimited Credits</p>
-                </div>
+                <p className='mt-2 mb-0'>Unlimited Credits</p>
             </div>
         </div>
+    </div>
     )
 }
 

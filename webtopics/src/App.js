@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import {Home} from './Pages/Home'
-import Details from './Pages/Details'
+import Details from './Pages/details'
 
 function App() {
   return (

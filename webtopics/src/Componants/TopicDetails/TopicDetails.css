@@ -3,19 +3,11 @@
     color: #fff;
 }
 
-.details-container {
-    /* position: absolute; */
-    color: #fff;
-    max-width: 60em;
-    /* margin-right: auto;
-    margin-left: auto; */
-}
-
-.details{
-    background-color: bisque;
+.details {
     margin-left: 19%;
     width: 38%;
 }
+
 .details-header-wrapper>h1 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -26,8 +18,23 @@
     font-weight: 400;
 }
 
-.details-text-wrapper>summary {
+summary {
     font-size: 1rem;
-    margin-top: 1rem;
     line-height: 22px;
+    letter-spacing: 0px;
+}
+
+@media screen and (max-width: 1390px) {
+    .details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details {
+        margin-left: 0;
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }

@@ -1,6 +1,17 @@
 import React from 'react'
 import './TopicCard.css'
+// import { useNavigate } from "react-router-dom";
+
 function TopicCard(props) {
+    // const navigate = useNavigate();
+    // const history = useHistory();
+
+//    const handelNavigation = (e) =>{
+//     e.preventDefault();
+//     // navigate('/details/:id')
+//     history.push('/details/:id');
+//    }
+
     return (
         <li>
             <div className="card border-0 shadow-sm text-decoration-none icon-link w-100">

@@ -1,6 +1,5 @@
 table{
-    border: 1px solid var(--lines-color);
-    border-radius: 10px;
+    border-collapse: collapse;
     background-color: var(--bg_default);
 }
 
@@ -14,7 +13,8 @@ td>ion-icon {
     font-size: 1.5rem;
     vertical-align: middle;
 }
-
-td>span{
-padding: 0.5rem;
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
 }
