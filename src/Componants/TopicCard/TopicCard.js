@@ -1,12 +1,11 @@
 import React from 'react'
 import './TopicCard.css'
-// import imge from ""
+// import ajax from "./thumpNail/ajax"; C:\Users\Hala\Desktop\Hala-Salhab-Project1\webtopics\public\thumbNail‏\accessibility.png
 
-function TopicCard({category, topic,  author, image}) {
-    // console.log(imge)
+function TopicCard({id, category, topic,  author, image, handelDetailsPageRender}) {
     return (
             <div className="card border-0 shadow-sm text-decoration-none icon-link w-100">
-                <img src={'../Logos/ajax.png'} alt={image} className="card-img-top h-50" />
+                <img src={`Hala-Salhab-Project1/webtopics/public/thumbNail/accessibility.png`} alt={image} className="card-img-top h-50" />
                 <div className="card-body text-truncate d-flex flex-column gap-2 justify-content-start w-100">
                     <div>
                     <p className="text-body-secondary mb-0 text-truncate" id='category'>{category}</p>

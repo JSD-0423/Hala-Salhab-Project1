@@ -7,7 +7,7 @@ function LoadingSpinner({ loadingMessage }) {
     }
 
     return (
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center mt-5">
             <div className="spinner-border" role="status" style={inlineStyles}>
                 <span className="visually-hidden">{loadingMessage}</span>
             </div>
