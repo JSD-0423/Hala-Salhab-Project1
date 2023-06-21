@@ -1,10 +1,10 @@
 import React from 'react'
-import TopicDetails from '../Componants/TopicDetails/TopicDetails'
-import FavoriteCard from '../Componants/FavoriteCard/FavoriteCard'
-import Table from '../Componants/Table/Table'
+import TopicDetails from '../Components/TopicDetails/TopicDetails'
+import FavoriteCard from '../Components/FavoriteCard/FavoriteCard'
+import Table from '../Components/Table/Table'
 import { useParams } from 'react-router-dom';
 import useApiRequest from '../API/useApiRequest';
-import LoadingSpinner from '../Componants/LoadingSpinner/LoadingSpinner';
+import LoadingSpinner from '../Components/LoadingSpinner/LoadingSpinner';
 
 
 function Details({ loadingMessage }) {

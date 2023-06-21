@@ -1,7 +1,6 @@
 #search-bar {
     background-color: var(--bg_default);
     position: relative;
-
 }
 
 
@@ -16,6 +15,8 @@ select {
     margin-right: 0.1rem;
     margin-left: 0.1rem;
 }
+
+
 
 @media screen and (min-width :992px) {
     .border-md-start {
