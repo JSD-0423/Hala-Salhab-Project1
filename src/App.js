@@ -19,7 +19,7 @@ function App() {
     <Banner/>
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" render={(props) => <Home data={data} loading={loading} error={error} loadingMessage={loadingMessage}/>} />
+        <Route exact path="/Hala-Salhab-Project1/" render={(props) => <Home data={data} loading={loading} error={error} loadingMessage={loadingMessage}/>} />
         <Route path="/details/:id" component={Details} />
       </Switch>
     </BrowserRouter>
