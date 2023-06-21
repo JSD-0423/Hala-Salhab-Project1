@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Hala-Salhab-Project1/static/css/main.422b46e7.css",
+    "main.js": "/Hala-Salhab-Project1/static/js/main.6962f998.js",
+    "static/js/787.8d8051b2.chunk.js": "/Hala-Salhab-Project1/static/js/787.8d8051b2.chunk.js",
+    "index.html": "/Hala-Salhab-Project1/index.html",
+    "main.422b46e7.css.map": "/Hala-Salhab-Project1/static/css/main.422b46e7.css.map",
+    "main.6962f998.js.map": "/Hala-Salhab-Project1/static/js/main.6962f998.js.map",
+    "787.8d8051b2.chunk.js.map": "/Hala-Salhab-Project1/static/js/787.8d8051b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.422b46e7.css",
+    "static/js/main.6962f998.js"
+  ]
+}
