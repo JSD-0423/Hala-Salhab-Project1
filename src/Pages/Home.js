@@ -1,18 +1,13 @@
 import React from 'react'
-import Header from '../Componants/Header/header' 
-import Banner from '../Componants/Banner/Banner'
 import SearchBar from '../Componants/SearchBar/SearchBar'
 import SearchResult from '../Componants/SearchResult/SearchResult'
-import Footer from '../Componants/Footer/Footer'
 
-export const Home = () => {
+export const Home = ({ data, loading, error, loadingMessage }) => {
+  // console.log(data, error)
   return (
     <div>
-      <Header/>
-      <Banner/>
       <SearchBar/>
-      <SearchResult/>
-      <Footer/>
+      <SearchResult data={data} loading={loading} error={error} loadingMessage={loadingMessage}/>
     </div>
   )
 }
