@@ -6,8 +6,6 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: var(--bg_body);
-  color: var(--body-text);
 }
 
 * {
@@ -29,13 +27,6 @@ select {
 *:focus {
   outline: none;
 }
-
-#cards-container{
-  margin-top: -1rem;
+*:active {
+  outline: none;
 }
-/* @media screen and (max-width:570px) {
-
-  .container {
-      width: 90%;
-  }
-} */

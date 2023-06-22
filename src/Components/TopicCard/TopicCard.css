@@ -10,3 +10,23 @@
 .raiting{
     color: var(--bs-yellow);
 }
+
+.card-body-light{
+    background-color: var(--bg_body);
+    color: var(--body-text);
+}
+
+.card-body-dark{
+    background-color: var(--bg_body-dark);
+    color: var(--body-text-dark);
+}
+
+.category-text-light{
+    color: var(--body-text);
+}
+
+.category-text-dark{
+    color: var(--body-text-dark);
+    font: 0.4rem;
+    font-weight: 200;
+}

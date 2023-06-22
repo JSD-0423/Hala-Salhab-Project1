@@ -3,8 +3,6 @@ import SearchBar from '../Components/SearchBar/SearchBar'
 import SearchResult from '../Components/SearchResult/SearchResult'
 
 export const Home = ({ data, loading, error, loadingMessage, dataCount, resultMessage, errorMessage,filterOptions, sortOptions, handleSearch, handleSort, handleFilter,searchValue, setSearchData, filteredTopics, searchData }) => {
-  // console.log(data, error)
-  console.log(filteredTopics, searchData)
 
   return (
     <div>

@@ -5,9 +5,10 @@ import Header from '../src/Components/Header/header'
 import Banner from '../src/Components/Banner/Banner'
 import Footer from '../src/Components/Footer/Footer'
 import useApiRequest from './API/useApiRequest'
-import { useState, useEffect } from 'react';
-
-
+import { useState, useEffect, useContext } from 'react';
+import FavortiesContainer from './Components/FavortiesContainer/FavortiesContainer';
+import ThemeContext from './Context/ThemeContext';
+import './Style/dark-mode.css';
 
 function App() {
   const { data, loading, error } = useApiRequest('https://tap-web-1.herokuapp.com/topics/list');
@@ -24,8 +25,16 @@ function App() {
   const [filterValue, setFilterValue] = useState('');
   const [sortValue, setSortValue] = useState('');
   const [filteredTopics, setFilteredTopics] = useState([]);
-  // const [sotredTopics, setSortedTopics] = useState([]);
+  const [favotireContaierHeadLine, setfavotireContaierHeadLine] = useState('My Favourite Topics');
+  const [showFavorites, setShowFavorites] = useState(false);
+  const [headerTitle, setHeaderTitle] = useState('Web Topics');
+  const [favoriteTopics, setFavoriteTopics] = useState([]);
 
+  //extract theme 
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const appClassName = theme === 'dark'
+      ? 'app app-dark'
+      : 'app app-ligh';
 
   useEffect(() => {
     if (data) {
@@ -36,21 +45,6 @@ function App() {
       setCategories(categories);
     }
   }, [data]);
-
-  const handleSearch = (value) => {
-    setSearchValue(value);
-  };
-
-
-  const handleSort = (value) => {
-    setSortValue(value);
-    console.log(sortValue)
-  };
-
-  const handleFilter = (value) => {
-    setFilterValue(value);
-    console.log(filterValue)
-  };
 
   // Apply filtering based on filterValue 
   useEffect(() => {
@@ -66,7 +60,7 @@ function App() {
   // Apply sorting based on sortValue
 
   useEffect(() => {
-    console.log("before sorting",filteredTopics,!sortValue )
+    console.log("before sorting", filteredTopics, !sortValue)
     if (sortValue && filteredTopics.length) {
       const sortedTopics = [...filteredTopics];
       sortedTopics.sort((a, b) => {
@@ -90,22 +84,52 @@ function App() {
         }
         return 0;
       })
-      setSearchData(sortedSearchData); 
+      setSearchData(sortedSearchData);
     }
-    console.log("after sorting",filteredTopics) 
+    console.log("after sorting", filteredTopics)
   }, [sortValue, filteredTopics, searchData]);
 
+  // Load favorite topics from local storage on component mount
+  useEffect(() => {
+    const storedFavoriteTopics = localStorage.getItem('favoriteTopics');
+    if (storedFavoriteTopics) {
+      setFavoriteTopics(JSON.parse(storedFavoriteTopics));
+      console.log(storedFavoriteTopics)
+    }
+  }, []);
+
+  // Save favorite topics to local storage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('favoriteTopics', JSON.stringify(favoriteTopics));
+  }, [favoriteTopics]);
+
+  const handleSearch = (value) => {
+    setSearchValue(value);
+  };
+
+  const handleSort = (value) => {
+    setSortValue(value);
+  };
+
+  const handleFilter = (value) => {
+    setFilterValue(value);
+  };
+
+  const toggleFavorites = () => {
+    setShowFavorites(!showFavorites);
+  };
 
   return (
-    <div>
-      <Header />
+    <div className={appClassName}>
+      <Header toggleFavorites={toggleFavorites} headerTitle={headerTitle} theme={theme} toggleTheme={toggleTheme} />
       <Banner />
       <Router>
         <Routes>
           <Route path="/Hala-Salhab-Project1" element={<Home data={data} loading={loading} error={error} loadingMessage={loadingMessage} dataCount={dataCount} resultMessage={resultMessage} errorMessage={errorMessage} filterOptions={categories} sortOptions={sortOptions} handleSearch={handleSearch} handleSort={handleSort} handleFilter={handleFilter} searchValue={searchValue} setSearchData={setSearchData} filteredTopics={filteredTopics} searchData={searchData}/>} />
-          <Route path="/Hala-Salhab-Project1/details/:id" element={<Details loadingMessage={loadingMessage} />} />
+          <Route path="/Hala-Salhab-Project1/details/:id" element={<Details loadingMessage={loadingMessage} favoriteTopics={favoriteTopics} setFavoriteTopics={setFavoriteTopics} />} />
         </Routes>
       </Router>
+      {showFavorites && <FavortiesContainer favoriteTopics={favoriteTopics} favotireContaierHeadLine={favotireContaierHeadLine} />}
       <Footer />
     </div>
   );

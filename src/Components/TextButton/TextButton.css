@@ -1,12 +1,12 @@
 .text-button {
     font-weight: 400;
     font-size: 0.899rem;
-    background-color: var(--bg_defaul);
+    background-color: transparent;
     text-align: center;
-    border: 1px solid var(--lines-color);
     border-radius: 3px;
     padding: 0.2rem;
     padding-inline: 10px;
+    border: 1px solid var(--lines-color);
 }
 
 ion-icon {
@@ -14,4 +14,13 @@ ion-icon {
     --ionicon-stroke-width: 20px;
     vertical-align: middle;
     margin-right: 0.1rem;
+}
+
+.text-button-dark {
+    border: 1px solid var(--lines-color-dark);
+    color: var(--body-text-dark);
+}
+
+.text-button-light {
+    color: var(--body-text);
 }

@@ -1,8 +1,14 @@
 #search-bar {
-    background-color: var(--bg_default);
     position: relative;
 }
 
+.search-bar-dark{
+    background-color: var(--bg_default-dark);
+    color: var(--body-text-dark);
+}
+.search-bar-light{
+    background-color: var(--bg_default);
+}
 
 select {
     font-weight: 400;
@@ -22,7 +28,10 @@ select {
     .border-md-start {
         border-left: 1px solid var(--lines-color);
     }
+    .border-md-start-dark{
+        border-left: 1px solid var(--lines-color-dark);
 
+    }
     .border-top {
         border-top: none !important;
     }

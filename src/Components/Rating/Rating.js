@@ -17,7 +17,7 @@ function Rating({ rating, halfIconName, fullIconName, emptyIconName }) {
    // Render empty stars
    const emptyStars = maxStars - stars.length;
    for (let i = 0; i < emptyStars; i++) {
-     stars.push(<ion-icon name={emptyIconName} key={intValue + i}></ion-icon>);
+     stars.push(<ion-icon name={emptyIconName} key={intValue + i+1}></ion-icon>);
    }
 
   return <div>{stars}</div>;

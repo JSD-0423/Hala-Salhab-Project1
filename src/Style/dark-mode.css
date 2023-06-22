@@ -1,0 +1,9 @@
+.app-ligh{
+  background-color: var(--bg_body);
+  color: var(--body-text);
+}
+
+.app-dark{
+    background-color: var(--bg_body-dark);
+  color: var(--body-text-dark);
+}

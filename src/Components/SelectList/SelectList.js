@@ -1,4 +1,5 @@
 import React from 'react'
+import './SelectList.css'
 
 function SelectList({ label, name, id, options, handelOptionValue }) {
 

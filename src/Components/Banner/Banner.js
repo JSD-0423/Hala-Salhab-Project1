@@ -1,9 +1,18 @@
 import React from 'react'
 import './banner.css'
+import ThemeContext from '../../Context/ThemeContext'
+import { useContext } from 'react'
 
 function Banner() {
+  //extract theme 
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const bannerClassName = theme === 'dark'
+    ? 'banner-dark'
+    : 'banner-light';
+
+
   return (
-    <section className="banner" id="banner">
+    <section className={bannerClassName}>
         <div className="rectangle_wrapper">
             <div className="triangle triangle-left"></div>
             <div className="triangle triangle-right"></div>

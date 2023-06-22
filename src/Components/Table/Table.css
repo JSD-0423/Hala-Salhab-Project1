@@ -1,8 +1,11 @@
 table{
     border-collapse: collapse;
-    background-color: var(--bg_default);
 }
 
+.table-lightt{
+    background-color: var(--bg_default);
+    color: var(--body-text);
+}
 
 .main-head-line {
     font-size: 1.5rem;
@@ -15,6 +18,5 @@ td>ion-icon {
 }
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #dee2e6;
   padding: 0.75rem;
 }

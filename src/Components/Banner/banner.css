@@ -1,5 +1,10 @@
-.banner {
+.banner-light {
     background-color: var(--bg_default);
+}
+
+.banner-dark{
+    background-color: var(--bg_default-dark);
+    color: var( --body-text-dark);
 }
 
 .rectangle_wrapper {
